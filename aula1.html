@@ -34,6 +34,7 @@
     <button id="silenciar">SILENCIAR</button>
     <button id="dessilenciar">DESSILENCIAR</button>
     <button id="acelerar">ACELERAR</button>
+    <button id="desacelerar">DESACELERAR</button>
     <button id="duracao">DURAÇÃO</button>
     <button id="verificar">VERIFICAR</button>
     <button id="controles">CONTROLES</button>
@@ -60,6 +61,9 @@
         }
         acelerar.onclick = function() {
             musga3.playbackRate = 2.0;
+        }
+        desacelerar.onclick = function() {
+            musga3.playbackRate = 0.75;
         }
         duracao.onclick = function() {
             var duracao = (musga3.duration/60).toFixed(2);
