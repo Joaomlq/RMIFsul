@@ -88,6 +88,15 @@
         verificar.onclick = function() {
             console.log(musga3.readyState);
         }
+        controles.onclick = function() {
+            var musga = musga3;
+            if (musga.hasAttribute("controls")) {
+                musga.removeAttribute("controls");
+            } else {
+                musga.setAttribute("controls", "controls");
+            }
+        }
+        // trocar musica quando acabar
         musga3.onended = function() {
             alert("A música encerrou");
             musga3.src = "musga2.mp3";
